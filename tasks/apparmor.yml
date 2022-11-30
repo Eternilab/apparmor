@@ -1,0 +1,28 @@
+---
+### Installation
+- name: Ensure that apparmor is installed (Debian)
+  ansible.builtin.apt:
+    state: "{{ apt_state }}"
+    name: "{{ apt_packages }}"
+    autoclean: True
+    autoremove: True
+    force_apt_get: True
+    update_cache: True
+    cache_valid_time: 3600
+    install_recommends: False
+  become: True
+  when: (ansible_facts['pkg_mgr'] == 'apt') and (ansible_facts['distribution'] == 'Debian')
+  tags:
+    - install
+
+### configuration
+# - name: Be sure apparmor is configured
+#   ansible.builtin.template:
+#     src: "apparmorrc.j2"
+#     dest: "{{ etc_path }}/apparmor/"
+#     owner: "{{ zabbix_user }}"
+#     group: "{{ zabbix_group }}"
+#     mode: '0600'
+#   become: yes
+#   tags:
+#     - conf

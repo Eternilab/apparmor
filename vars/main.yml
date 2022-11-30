@@ -1,0 +1,11 @@
+---
+
+# State is latest by default
+apt_state: latest
+pkg_state: latest
+
+# Array of packages to install
+apt_packages:
+  - apparmor
+zypper_packages:
+  - patterns-base-apparmor

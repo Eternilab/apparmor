@@ -1,0 +1,4 @@
+---
+- include: apparmor.yml
+  tags:
+    - apparmor
