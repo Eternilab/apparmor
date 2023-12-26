@@ -1,16 +1,16 @@
 ---
 ### Installation
-- name: Ensure that apparmor is installed (Debian)
+- name: "Ensure that apparmor is installed (Debian)"
   ansible.builtin.apt:
     state: "{{ apt_state }}"
     name: "{{ apt_packages }}"
-    autoclean: True
-    autoremove: True
-    force_apt_get: True
-    update_cache: True
+    autoclean: true
+    autoremove: true
+    force_apt_get: true
+    update_cache: true
     cache_valid_time: 3600
-    install_recommends: False
-  become: True
+    install_recommends: false
+  become: true
   when: (ansible_facts['pkg_mgr'] == 'apt') and (ansible_facts['distribution'] == 'Debian')
   tags:
     - install
