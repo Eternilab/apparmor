@@ -2,8 +2,8 @@
 ### Installation
 - name: "Ensure that apparmor is installed (Debian)"
   ansible.builtin.apt:
-    state: "{{ apt_state }}"
-    name: "{{ apt_packages }}"
+    state: "{{ apparmor_apt_state }}"
+    name: "{{ apparmor_apt_packages }}"
     autoclean: true
     autoremove: true
     force_apt_get: true
