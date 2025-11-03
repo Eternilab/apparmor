@@ -9,15 +9,15 @@ Ce rôle est sous licence XXX
 
 ## Avant propos
 
-Ce rôle est conforme au document [GUIDE_HYGIENE_INFORMATIQUE] de l'ANSSI, uniquement si vous utilisez les valeurs par défauts du rôle.
+Ce rôle est conforme au document [GUIDE_HYGIENE_INFORMATIQUE] de l'ANSSI, uniquement si vous configurez le rôle selon vos besoins.
 
-Ce rôle ne garanti pas la conformité en cas de modification de ces valeurs, bien que d'autres valeurs puissent être conformes.
+Ce rôle seul ne garanti pas la conformité, il doit être modifié.
 
 ## Description
 
-Ce rôle configure le serveur installe et configure _apparmor_ .
-_Apparmor_ est un outils permettant à l'administrateur système d'associer à chaque programme un profil de sécurité qui restreint les capacités de celui-ci.
-Ce rôle est configuré pour qu'il soit conforme au [GUIDE_HYGIENE_INFORMATIQUE] de l'ANSSI :fr: :
+Ce rôle installe _apparmor_ .
+_Apparmor_ est un gestionnaire des droits d'accès aux applications permettant à l'administrateur système d'associer à chaque programme un profil de sécurité.
+Ce rôle est installé pour qu'il soit configuré et mit en conformité avec le [GUIDE_HYGIENE_INFORMATIQUE] de l'ANSSI :fr: :
 
 > https://cyber.gouv.fr/publications/FIXME
 
