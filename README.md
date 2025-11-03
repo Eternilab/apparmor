@@ -9,7 +9,7 @@ Ce rôle est sous licence XXX
 
 ## Avant propos
 
-Ce rôle est conforme au document [GUIDE_LINUX] de l'ANSSI, uniquement si vous utilisez les valeurs par défauts du rôle.
+Ce rôle est conforme au document [GUIDE_HYGIENE_INFORMATIQUE] de l'ANSSI, uniquement si vous utilisez les valeurs par défauts du rôle.
 
 Ce rôle ne garanti pas la conformité en cas de modification de ces valeurs, bien que d'autres valeurs puissent être conformes.
 
@@ -17,7 +17,7 @@ Ce rôle ne garanti pas la conformité en cas de modification de ces valeurs, bi
 
 Ce rôle configure le serveur installe et configure _apparmor_ .
 _Apparmor_ est un outils permettant à l'administrateur système d'associer à chaque programme un profil de sécurité qui restreint les capacités de celui-ci.
-Ce rôle est configuré pour qu'il soit conforme au [GUIDE_LINXU] de l'ANSSI :fr: :
+Ce rôle est configuré pour qu'il soit conforme au [GUIDE_HYGIENE_INFORMATIQUE] de l'ANSSI :fr: :
 
 > https://cyber.gouv.fr/publications/FIXME
 
@@ -31,18 +31,17 @@ Signification de la couverture :
 * :x: la recommandation n'est pas couverte par ce rôle
 * :no_entry_sign: la recommandation ne peut pas être couverte par une solution technique
 
-
-| Recommandation | Couverture | Configuration | Valeur par défaut | Commentaire |
+| Recommandation | Couverture | Configuration | Valeur par défaut | Commentaire |
 | ---  | ---                  | ---           | ---    | ---         |
 | R1   | :no_entry_sign:      |    		| | |
-| R2   | :x:                  |    		| | |
-| R3   | :x:                  |    		| | |
-| R4   | :x:                  |    		| | |
-| R5   | :x:                  |    		| | |
-| R6   | :x:                  |    		| | |
-| R7   | :x:                  |    		| | |
-| R8   | :x:                  |    		| | |
-| R9   | :x:                  |    		| | |
+| R2   | :no_entry_sign:      |    		| | |
+| R3   | :no_entry_sign:      |    		| | |
+| R4   | :no_entry_sign:      |    		| | |
+| R5   | :no_entry_sign:      |    		| | |
+| R6   | :no_entry_sign:      |    		| | |
+| R7   | :no_entry_sign:      |    		| | |
+| R8   | :no_entry_sign:      |    		| | |
+| R9   | :white_check_mark:   |    		| | |
 | R10  | :x:                  |    		| | |
 | R11  | :x:                  |    		| | |
 | R12  | :x:                  |    		| | |
@@ -52,65 +51,27 @@ Signification de la couverture :
 | R16  | :x:                  |    		| | |
 | R17  | :x:                  |    		| | |
 | R18  | :x:                  |    		| | |
-| R19  | :white_check_mark:   |    		| FIXME | |
-| R20  | :white_check_mark:   |    		| FIXME | |
+| R19  | :x:                  |    		| | |
+| R20  | :x:                  |    		| | |
 | R21  | :x:                  |    		| | |
 | R22  | :x:                  |    		| | |
 | R23  | :x:                  |    		| | |
 | R24  | :x:                  |    		| | |
 | R25  | :x:                  |    		| | |
-| R26  | :x:                  |    		| | |
+| R26  | :no_entry_sign:      |    		| | |
 | R27  | :x:                  |    		| | |
 | R28  | :x:                  |    		| | |
-| R29  | :x:                  |    		| | |
-| R30  | :x:                  |    		| | |
+| R29  | :white_check_mark:   |    		| | |
+| R30  | :no_entry_sign:      |    		| | |
 | R31  | :x:                  |    		| | |
 | R32  | :x:                  |    		| | |
 | R33  | :x:                  |          | | |
-| R34  | :x:                  |          | | |
-| R35  | :white_check_mark:   |          | FIXME | |
+| R34  | :no_entry_sign:      |          | | |
+| R35  | :no_entry_sign:      |          | | |
 | R36  | :x:                  |          | | |
-| R37  | :x:                  |          | | |
-| R38  | :x:                  |          | | |
-| R39  | :x:                  |          | | |
+| R37  | :no_entry_sign:      |          | | |
+| R38  | :no_entry_sign:      |          | | |
+| R39  | :no_entry_sign:      |          | | |
 | R40  | :no_entry_sign:      |          | | |
 | R41  | :no_entry_sign:      |          | | |
 | R42  | :no_entry_sign:      |          | | |
-| R43  | :no_entry_sign:      |          | | |
-| R44  | :white_check_mark:   |          | FIXME | |
-| R45  | :white_check_mark:   |          | FIXME | |
-| R46  | :x:                  |          | | |
-| R47  | :x:                  |          | | |
-| R48  | :x:                  |          | | |
-| R49  | :x:                  |          | | |
-| R50  | :x:                  |          | | |
-| R51  | :x:                  |          | | |
-| R52  | :x:                  |          | | |
-| R53  | :x:                  |          | | |
-| R54  | :x:                  |          | | |
-| R55  | :x:                  |          | | |
-| R56  | :no_entry_sign:      |          | | |
-| R57  | :no_entry_sign:      |          | | |
-| R58  | :no_entry_sign:      |          | | |
-| R59  | :x:                  |          | | |
-| R60  | :no_entry_sign:      |          | | |
-| R61  | :x:                  |          | | |
-| R62  | :x:                  |          | | |
-| R63  | :x:                  |          | | |
-| R64  | :x:                  |          | | |
-| R65  | :x:                  |          | | |
-| R66  | :x:                  |          | | |
-| R67  | :x:                  |          | | |
-| R68  | :x:                  |          | | |
-| R69  | :x:                  |          | | |
-| R70  | :x:                  |          | | |
-| R71  | :x:                  |          | | |
-| R72  | :x:                  |          | | |
-| R73  | :x:                  |          | | |
-| R74  | :x:                  |          | | |
-| R75  | :x:                  |          | | |
-| R76  | :x:                  |          | | |
-| R77  | :x:                  |          | | |
-| R78  | :x:                  |          | | |
-| R79  | :x:                  |          | | |
-| R80  | :x:                  |          | | |
