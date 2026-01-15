@@ -11,7 +11,9 @@
     cache_valid_time: 3600
     install_recommends: false
   become: true
-  when: (ansible_facts['pkg_mgr'] == 'apt') and (ansible_facts['distribution'] == 'Debian')
+  when:
+    (ansible_facts['pkg_mgr'] == 'apt')
+    and (ansible_facts['distribution'] == 'Debian')
   tags:
     - install
 
