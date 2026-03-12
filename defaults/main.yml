@@ -1,9 +1,1 @@
 ---
-# State is latest by default
-apparmor_apt_state: latest
-
-# Array of packages to install
-apparmor_apt_packages:
-  - apparmor
-apparmor_zypper_packages:
-  - patterns-base-apparmor
