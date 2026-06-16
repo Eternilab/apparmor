@@ -5,7 +5,7 @@ title: apparmor ansible role
 
 ## Licence
 
-Ce rôle est sous licence XXX
+Ce rôle est sous licence MIT
 
 ## Avant propos
 
